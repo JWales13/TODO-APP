@@ -1,0 +1,20 @@
+{
+  "name": "Weekend_Challenge_3",
+  "version": "1.0.0",
+  "description": "To Do List",
+  "main": "server/server.js",
+  
+ 
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js"
+  },
+  "keywords": [],
+  "author": "JW",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "pg": "^7.4.0"
+}
+}
