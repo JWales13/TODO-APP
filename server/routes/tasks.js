@@ -14,7 +14,7 @@ router.get('/', function (req, res) {
         } else {
             // We connected to the database!!!
             // Now, we're going to GET things from thd DB
-            client.query('SELECT * FROM todo ORDER BY id;', function (errorMakingQuery, result) {
+            client.query('SELECT * FROM todo ORDER BY status DESC, id;', function (errorMakingQuery, result) {
                 done();
                 if (errorMakingQuery) {
                     // Query failed. Did you test it in Postico?
